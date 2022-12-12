@@ -42,7 +42,7 @@ func ResourceLFTag() *schema.Resource {
 				Type:     schema.TypeSet,
 				Required: true,
 				MinItems: 1,
-				MaxItems: 15,
+				MaxItems: 1000,
 				Elem: &schema.Schema{
 					Type:         schema.TypeString,
 					ValidateFunc: validateLFTagValues(),
